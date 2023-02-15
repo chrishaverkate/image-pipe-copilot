@@ -1,1 +1,5 @@
 tests/images_out/*.png
+
+src/filters/__pycache__/**
+tests/filters/__pycache__/**
+
