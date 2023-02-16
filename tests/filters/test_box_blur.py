@@ -7,4 +7,4 @@ def test_box_blur():
     image = Image.open('tests/images/swatches.png')
     result = BlurFilter(image).box_blur(5)
     assert image.filter(ImageFilter.BoxBlur(5)) == result
-    # result.save('tests/images_out/swatches_box_blur.png')
+    result.save('tests/images_out/swatches_box_blur.png')
