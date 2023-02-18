@@ -1,3 +1,5 @@
+from PIL import Image
+
 
 class RotateFilter():
 
@@ -9,4 +11,4 @@ class RotateFilter():
         expand (bool): Expand image to fit rotated image.
         Returns: PIL.Image: Filtered image.
         """
-        return image.rotate(angle, expand=expand)
+        return image.rotate(angle, expand=expand, resample=Image.BICUBIC, fillcolor=(225, 225, 225))
